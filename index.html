@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Enlaces</title>
+
+  <link rel="icon" href="icon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center; 
+      align-items: flex-start;
+      background-image: url('background.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6); 
+      z-index: -1;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .username {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .bio {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+    }
+
+    .social-icons a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-3px);
+      color: #d4b3ff;
+    }
+
+    .section-title {
+      border-radius: 14px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      background: rgba(35, 35, 35, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 12px 15px;
+      text-align: left;
+      font-weight: 700;
+      backdrop-filter: blur(5px);
+      font-size: 1rem;
+    }
+
+    .link-card {
+      border-radius: 18px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(28, 28, 28, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      margin-bottom: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+      transition: 0.25s ease;
+      backdrop-filter: blur(5px);
+    }
+
+    .link-card:hover {
+      transform: translateY(-4px) scale(1.01);
+      background: rgba(45, 45, 45, 0.98);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.18);
+    }
+
+    .link-card i {
+      font-size: 1.8rem;
+      min-width: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .link-content {
+      text-align: left;
+    }
+
+    .link-content h3 {
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .link-content p {
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    .yape-logo {
+      width: 40px; 
+      height: 40px;
+      min-width: 40px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: white;
+      padding: 2px;
+    }
+
+    .qr-container-card {
+      flex-direction: column; 
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .qr-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .qr-image-giant {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto;
+      border-radius: 12px;
+      border: 4px solid white;
+      background: white;
+      padding: 8px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 600px) {
+      .qr-image-giant { max-width: 240px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <img class="profile-img" src="perfil.png" alt="Perfil">
+    <h1 class="username">HsSebastian</h1>
+    <p class="bio">Creador de contenido pequeño al que aspira a crecer algun dia ❤️</p>
+
+    <div class="social-icons">
+      <a href="https://www.twitch.tv/hssebastian" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+      <a href="https://www.youtube.com/@Hs.Sebastian" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@hssebastian_17" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/hssebastian_13/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:contacto@hssebastian.net.pe"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <div class="section-title">Plataformas</div>
+
+    <a href="https://www.twitch.tv/hssebastian" target="_blank" class="link-card">
+      <i class="fa-brands fa-twitch"></i>
+      <div class="link-content">
+        <h3>Twitch</h3>
+        <p>Streams y contenido en vivo</p>
+      </div>
+    </a>
+
+    <a href="https://www.tiktok.com/@hssebastian_17" target="_blank" class="link-card">
+      <i class="fa-brands fa-tiktok"></i>
+      <div class="link-content">
+        <h3>TikTok</h3>
+        <p>Clips de los directos</p>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/@Hs.Sebastian" target="_blank" class="link-card">
+      <i class="fa-brands fa-youtube"></i>
+      <div class="link-content">
+        <h3>YouTube</h3>
+        <p>Videos largos y Shorts</p>
+      </div>
+    </a>
+
+    <div class="section-title">Redes Sociales</div>
+
+    <a href="https://www.instagram.com/hssebastian_13/" target="_blank" class="link-card">
+      <i class="fa-brands fa-instagram"></i>
+      <div class="link-content">
+        <h3>Instagram</h3>
+        <p>Fotos de lo que sea</p>
+      </div>
+    </a>
+
+    <div class="section-title">Donaciones</div>
+
+    <a href="https://streamelements.com/hssebastian/tip" target="_blank" class="link-card">
+      <i class="fa-brands fa-paypal"></i>
+      <div class="link-content">
+        <h3>PayPal</h3>
+        <p>Apoyo con donación directa</p>
+      </div>
+    </a>
+
+    <div class="link-card qr-container-card">
+      <div class="qr-header">
+        <img src="Yape.png" alt="Yape" class="yape-logo">
+        <div class="link-content">
+          <h3>Yape / Plin</h3>
+          <p>Apoyo economico atraves de billeteras digitales peruana.</p>
+        </div>
+      </div>
+      <img src="QR.png" alt="QR" class="qr-image-giant">
+    </div>
+
+    <div class="section-title">Correo</div>
+
+    <a href="mailto:contacto@hssebastian.net.pe" class="link-card">
+      <i class="fa-solid fa-envelope"></i>
+      <div class="link-content">
+        <h3>Correo de contacto</h3>
+        <p>contacto@hssebastian.net.pe</p>
+      </div>
+    </a>
+
+  </div>
+
+</body>
+</html>
