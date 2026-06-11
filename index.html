@@ -116,7 +116,37 @@
     }
 
     .social-icons a[href*="twitch.tv"]:hover { color: #9146FF; }
-    .social-icons a[href*="kick.com"]:hover { color: #53fc18; }
+    .kick-hover-container {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .kick-hover-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: opacity 0.3s ease; 
+    }
+
+    .kick-hover-container .img-default {
+      opacity: 1;
+    }
+    .kick-hover-container .img-hover {
+      opacity: 0;
+    }
+
+    .social-icons a:hover .kick-hover-container .img-default {
+      opacity: 0;
+    }
+    .social-icons a:hover .kick-hover-container .img-hover {
+      opacity: 1;
+    }
     .social-icons a[href*="youtube.com"]:hover { color: #FF0000; }
     .social-icons a[href*="tiktok.com"]:hover { 
       color: #FFFFFF; 
@@ -249,7 +279,12 @@
 
     <div class="social-icons">
       <a href="https://www.twitch.tv/hssebastian" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-      <a href="https://kick.com/hssebastian" target="_blank"><i class="fa-solid fa-k" style="font-size: 1.1rem; font-weight: 900;"></i></a>
+      <a href="https://kick.com/hssebastian" target="_blank">
+        <div class="kick-hover-container">
+          <img src="Kick.png" alt="Kick" class="img-default">
+          <img src="Kick.webp" alt="Kick Hover" class="img-hover">
+        </div>
+      </a>
       <a href="https://www.youtube.com/@Hs.Sebastian" target="_blank"><i class="fa-brands fa-youtube"></i></a>
       <a href="https://www.tiktok.com/@hssebastian_17" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
       <a href="https://discord.gg/Qa6AsNXZWA" target="_blank"><i class="fa-brands fa-discord"></i></a>
@@ -267,11 +302,11 @@
       </div>
     </a>
 
-    <a href="https://kick.com/hssebastian" target="_blank" class="link-card kick-card">
-      <i class="fa-solid fa-k" style="color: #53fc18;"></i>
+    <a href="https://kick.com/hssebastian" target="_blank" class="link-card">
+      <img src="Kick.png" alt="Kick" class="yape-logo">
       <div class="link-content">
         <h3>Kick</h3>
-        <p>Cuenta oficial de Kick</p>
+        <p>Directos y streams alternativos libres</p>
       </div>
     </a>
 
