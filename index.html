@@ -116,6 +116,7 @@
     }
 
     .social-icons a[href*="twitch.tv"]:hover { color: #9146FF; }
+    .social-icons a[href*="kick.com"]:hover { color: #53fc18; }
     .social-icons a[href*="youtube.com"]:hover { color: #FF0000; }
     .social-icons a[href*="tiktok.com"]:hover { 
       color: #FFFFFF; 
@@ -158,6 +159,11 @@
       transform: translateY(-4px) scale(1.01);
       background: rgba(45, 45, 45, 0.98);
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.18);
+    }
+
+    .link-card.kick-card:hover {
+      box-shadow: 0 0 20px rgba(83, 252, 24, 0.25);
+      border-color: rgba(83, 252, 24, 0.4);
     }
 
     .link-card i {
@@ -243,6 +249,7 @@
 
     <div class="social-icons">
       <a href="https://www.twitch.tv/hssebastian" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+      <a href="https://kick.com/hssebastian" target="_blank"><i class="fa-solid fa-k" style="font-size: 1.1rem; font-weight: 900;"></i></a>
       <a href="https://www.youtube.com/@Hs.Sebastian" target="_blank"><i class="fa-brands fa-youtube"></i></a>
       <a href="https://www.tiktok.com/@hssebastian_17" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
       <a href="https://discord.gg/Qa6AsNXZWA" target="_blank"><i class="fa-brands fa-discord"></i></a>
@@ -257,6 +264,14 @@
       <div class="link-content">
         <h3>Twitch</h3>
         <p>Streams y contenido en vivo</p>
+      </div>
+    </a>
+
+    <a href="https://kick.com/hssebastian" target="_blank" class="link-card kick-card">
+      <i class="fa-solid fa-k" style="color: #53fc18;"></i>
+      <div class="link-content">
+        <h3>Kick</h3>
+        <p>Cuenta oficial de Kick</p>
       </div>
     </a>
 
